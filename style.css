@@ -1,0 +1,692 @@
+* {
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0px;
+    font-family: sans-serif;
+    /*Courier; 
+    /*monospace, monospace;
+    sans-serif;*/
+}
+
+a {
+    color: inherit;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 3px 45px;
+    color: white;    
+    background: rgba(230, 11, 11, 0.849);
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-bottom: 1px solid rgba(245, 6, 6, 0.993);
+    position:fixed;
+    width: 100%;
+}
+
+header img {
+    width: 60px;
+    height: 40px;
+}
+
+nav {
+    
+    display: flex;
+    align-content: center;
+    gap:60px;
+    font-size: 18px;
+    padding: 0px 90px 0px 0px;
+}
+
+.lista {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.list-ini:hover {
+    text-decoration: underline;
+}
+
+.list-can:hover {
+    text-decoration:underline
+}
+
+.list-emp:hover {
+    text-decoration: underline;
+}
+
+.list-tra:hover{
+    text-decoration: underline;
+}
+
+nav button {
+    background-color: rgb(56, 53, 53);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+nav button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: -100% ;
+    transition: all .3s;
+}
+
+nav button:hover::before{
+    left: 0;
+    z-index: -1;
+}
+
+nav button:hover {
+    transform: scale(1.1);
+}
+
+main {
+    background-color:white
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<primera seccion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.section1 {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.baner {
+    display: flex;
+    padding-top: 80px;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(99, 99, 99);
+}
+
+.butt {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.servicios, .colaborar, .busca{
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    background-color:rgb(239, 46, 36); 
+    color: rgb(255, 255, 255);
+    border: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.servicios::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #cc0707;
+    position: absolute;
+    z-index: -1;
+    top: -37px;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.servicios:hover::after{
+    top: 0px;
+}
+
+.servicios:hover {
+    transform: scale(1.1);
+}
+/*boton colaborar*/
+
+.colaborar::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: calc(-100% - 37px);
+    /* border-top: 30px solid green;*/
+    border-bottom: 37px solid #cc0707;
+    /*border-left: 30px solid violet;*/
+    border-right: 37px solid transparent;
+    transition: all .3s ease-in-out;
+}
+
+.colaborar:hover::after {
+    left: 0;
+}
+
+.colaborar:hover{
+    transform: scale(1.1);
+}
+/*busca<<<<<<<<<<<<<<<<<<<<<<<<<<busca>>>>>>>>>>>>>>>>>>*/
+
+.busca::after {
+    content: '';
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    background-color: #cc0707;
+    z-index: -1;
+    top: -300%;
+    transition: all .4s ease-in-out;
+    border-radius: 0px 0px 300px 300px;
+}
+
+.busca:hover::after{
+    top: 0;
+}
+
+.busca:hover {
+    transform: scale(1.1);
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<segunda seccion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.section2 {
+    background-color: rgb(248, 220, 220);
+}
+
+.section2 h1 {
+    font-size: 50px;
+    color: rgb(245, 72, 72); 
+}
+
+.proposito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-size: 35px;
+    color: rgb(99, 99, 99);
+    padding: 25px 0px 20px 0px;
+}
+
+.arti1 {
+    max-width: 1085px;
+    margin: auto;
+}
+
+.nuestra-info {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.nuestra-info h1{
+    font-size: 30px;
+}
+
+.talento, .cultura, .trans {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 150px;
+    width: 700px;
+    padding: 40px 30px ;
+    gap: 20px;
+    font-size: 20px;
+    color: rgb(99, 99, 99);
+}
+
+.cultura  {
+    background-color: rgb(245, 72, 72);
+    color: white;
+}
+
+.trans {
+    background-color: rgb(99, 99, 99);
+    color: white;
+}
+
+.serv {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sumamos {
+    
+    color: rgb(99, 99, 99);
+    font-size: 25px;
+    padding: 0px 30px;
+    max-width: 800px;
+}
+
+.tres-parra {
+    display: flex;
+    padding: 40px 20px;
+    justify-content: center;
+}
+
+.conectar, .pertenecer, .co-crear {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    font-size: 20px;
+    height: 250px;
+    width: 300px;
+    color: rgb(117, 66, 66);
+}
+
+.conectar h2 {
+    color: rgb(245, 72, 72);
+}
+
+.pertenecer h2 {
+    color: rgb(56, 54, 54);
+}
+
+.pertenecer {
+    border-left: 3px solid rgb(245, 72, 72);
+    border-right:3px solid  rgb(245, 72, 72);
+}
+
+.co-crear h2 {
+    color: white;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<tercera seccion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-bottom: 50px ;
+    color: rgb(245, 72, 72);
+    font-size: 20px;
+    gap: 30px;
+    align-items: center;
+    }
+
+.arti2 {
+    box-sizing: border-box;
+    max-width: 1085px;
+    margin: auto;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.fabrica, .tractor, .menu, .marketing, .tecno, .coche, .mina {
+    background-color: #C91732;
+    border-radius: 25px;
+    height: 100px;
+    padding: 30px;
+    transition: all .3s;
+}
+
+.arti2 img:hover{
+    background-color: #4e4c4c;
+    cursor: pointer;
+}
+
+.industria, .agro, .hotel, .mark, .techno, .auto, .minero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.prin {
+    color: rgb(99, 99, 99);
+    display: flex;
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<section4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.section4 {
+    background-color: rgb(248, 220, 220);
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+.section4 h2 {
+    text-align: center;
+    color: rgb(245, 72, 72);
+    font-size: 50px;
+}
+
+.blog {
+    max-width: 1085px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tex-blog-parr {
+    color: #3b3939;
+    font-size: 14px;
+}
+
+.tex-link {
+    color: #cc0707;
+    font-size: 20px;
+}
+
+.tex-link-1 {
+    background-color: #e4bbbb;
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: #C91732;
+    font-size: 14px;
+}
+
+.tex-link-1:hover{
+    background-color: #eeaab3;
+}
+
+.blog1 {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
+
+.tex-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 1px;
+}
+
+.blog1 img { 
+    height: 350px;
+    border-radius: 7px;
+}
+
+.ver-mas {
+    background-color: rgb(63, 66, 66);
+    color: white;
+    padding: 8px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.ver-mas::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: -100%;
+    transition: all .3s;
+}
+
+.ver-mas:hover::before {
+    left: 0%;
+    z-index: -1;
+}
+
+.ver-mas:hover {
+    transform: scale(1.1);
+}
+/*<<<<<<<<<<<<<<<<<<seccion5>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.section5 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px;
+}
+
+.contac {
+    max-width: 1085px;
+    margin: auto;
+    padding-right: 530px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contac h1{
+    font-size: 40px;
+    color: rgb(99, 99, 99);
+}
+
+.contac p {
+    color: rgb(99, 99, 99);
+    font-size: 18px;
+}
+
+.for {
+    max-width: 1085px;
+    margin: auto;
+    display: flex;
+    gap: 45px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.nombre-telef, .email-empresa, .pais-asun {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nomb, .telef, .email, .empresa, .pais, .asun {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #4e4c4c;
+}
+
+form input {
+    width: 320px;
+    height: 40px;
+    border-radius: 6px;
+    border: none; 
+    background-color: #f72222;
+    color: rgb(247, 243, 243);
+}
+
+input::placeholder {
+    color: white;
+    padding: 0px 10px;
+}
+
+.mensaje {
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    color: #4e4c4c;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1085px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+form textarea{
+    width: 1040px;
+    height: 150px;
+    background-color: #f72222;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+textarea::placeholder {
+    color: white;
+    padding: 10px;
+}
+
+.section5 button{
+    cursor: pointer;
+    padding: 9px 30px;
+    border-radius: 6px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgb(56, 53, 53);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.section5 button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: -100%;
+    transition: all .3s;
+}
+
+.section5 button:hover::before {
+    left: 0;
+    z-index: -1;
+}
+
+.section5 button:hover {
+    transform: scale(1.1);
+}
+
+.but {
+    display:flex;
+    justify-content: start;
+    gap: 30px;
+    max-width: 1085px;
+    margin: auto;
+    align-content: start;
+    gap: 30px;
+    padding-left: 45px;
+    padding-top: 35px;
+}
+
+footer {
+    background-color: #394448;
+    padding: 40px 0px;
+}
+
+.container {
+    max-width: 1085px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 80px;
+}
+
+.compañia {
+    width: 25%;
+    padding: 0 15px ;
+}
+
+.compañia h3 {
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.compañia ul li a {
+    color: #7c7575;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.compañia ul li a:hover{
+    color: white;
+    padding-left: 6px;
+}
+
+.social-link a {
+    line-height: 0px;
+    margin-left: 8px;
+    background-color: rgba(65, 69, 75, 0.849);
+    display: inline-block;
+    border-radius: 40%;
+    padding: 3px;
+}
+
+.social-link img {
+    width: 30px;
+}
+
+.social-link a:hover {
+    display: inline-block;
+    background-color: rgb(248, 242, 242);
+    text-align: center;
+    border-radius: 40%;
+}
+
+.autor {
+    padding-left: 40px;
+    display: flex;
+    gap: 30px;
+    color: white
+}
+
+footer span {
+    font-weight: 700;
+}
