@@ -7,6 +7,7 @@
     /*Courier; 
     /*monospace, monospace;
     sans-serif;*/
+    
 }
 
 a {
@@ -116,14 +117,14 @@ main {
 
 .baner {
     display: flex;
-    padding-top: 80px;
+    padding-top: 51px;
 }
 
 .div2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .titulo2 {
@@ -220,10 +221,11 @@ main {
 
 .section2 {
     background-color: rgb(248, 220, 220);
+    padding-bottom: 65px;
 }
 
 .section2 h1 {
-    font-size: 50px;
+    font-size: 45px;
     color: rgb(245, 72, 72); 
 }
 
@@ -232,9 +234,9 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    font-size: 35px;
+    font-size: 33px;
     color: rgb(99, 99, 99);
-    padding: 25px 0px 20px 0px;
+    padding: 55px 0px 20px 0px;
 }
 
 .arti1 {
@@ -288,14 +290,15 @@ main {
 .sumamos {
     
     color: rgb(99, 99, 99);
-    font-size: 25px;
+    font-size: 24px;
     padding: 0px 30px;
     max-width: 800px;
+    text-align: center;
 }
 
 .tres-parra {
     display: flex;
-    padding: 40px 20px;
+    padding: 40px 20px 0px 20px;
     justify-content: center;
 }
 
@@ -331,14 +334,16 @@ main {
 .section3 {
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    padding-bottom: 50px ;
+    padding-top: 55px;
+    padding-bottom: 65px ;
     color: rgb(245, 72, 72);
-    font-size: 20px;
     gap: 30px;
     align-items: center;
     }
 
+.section3 h1 {
+    font-size: 45px;
+}
 .arti2 {
     box-sizing: border-box;
     max-width: 1085px;
@@ -359,7 +364,7 @@ main {
 }
 
 .arti2 img:hover{
-    background-color: #4e4c4c;
+    background-color: #a59696;
     cursor: pointer;
 }
 
@@ -369,6 +374,7 @@ main {
     align-items: center;
     gap: 5px;
     font-weight: 600;
+    font-size: 18px;
 }
 
 .prin {
@@ -377,17 +383,19 @@ main {
     max-width: 700px;
     margin: auto;
     padding: 10px;
+    font-size: 24px;
+    text-align: center;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<section4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .section4 {
     background-color: rgb(248, 220, 220);
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 55px;
+    padding-bottom: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
+    gap: 55px;
 }
 
 .section4 h2 {
@@ -448,8 +456,9 @@ main {
 .ver-mas {
     background-color: rgb(63, 66, 66);
     color: white;
-    padding: 8px 25px;
-    border-radius: 6px;
+    font-size: 17px;
+    padding: 15px 29px;
+    border-radius: 5px;
     font-weight: 600;
     position: relative;
     z-index: 1;
@@ -482,7 +491,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 60px;
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 
 .contac {
@@ -543,7 +553,7 @@ input::placeholder {
 }
 
 .mensaje {
-    padding-left: 20px;
+    padding-left: 11px;
     padding-top: 8px;
     padding-bottom: 15px;
     color: #4e4c4c;
@@ -571,8 +581,8 @@ textarea::placeholder {
 
 .section5 button{
     cursor: pointer;
-    padding: 9px 30px;
-    border-radius: 6px;
+    padding: 13px 33px;
+    border-radius: 5px;
     border: none;
     font-size: 17px;
     font-weight: 600;
@@ -610,8 +620,7 @@ textarea::placeholder {
     max-width: 1085px;
     margin: auto;
     align-content: start;
-    gap: 30px;
-    padding-left: 45px;
+    padding-left: 26px;
     padding-top: 35px;
 }
 
