@@ -1,3 +1,15 @@
+:root {
+    --navbar: #08324C;
+    --dei: #00D2FF;
+    --naranja: #FF996D;
+    --blanco: #fff;
+    --celeste: #95A7B2;
+    --azul: #284D63;
+    --contact: #F2F4F6;
+    --blog: #002A3C;
+    
+}
+
 * {
     margin: 0px;
     list-style-type: none;
@@ -6,7 +18,8 @@
     font-family: sans-serif;
     /*Courier; 
     /*monospace, monospace;
-    sans-serif;*/
+    sans-serif; Roboto,sans-serif */
+    /*border: solid 1px;*/
     
 }
 
@@ -19,214 +32,164 @@ header {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding: 3px 45px;
+    padding: 15px 45px;
     color: white;    
-    background: rgba(230, 11, 11, 0.849);
-    backdrop-filter: blur( 0.5px );
+    background: rgba(8, 41, 85, 0.336);
+    backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-bottom: 1px solid rgba(245, 6, 6, 0.993);
     position:fixed;
     width: 100%;
+    overflow: hidden;
 }
-
+/*
 header img {
     width: 60px;
     height: 40px;
+}*/
+
+.logo-aux {
+    font-size: 25px;
+    font-weight: 600;
+    
 }
 
+header strong {
+    color: var(--dei);
+}
+
+
 nav {
-    
     display: flex;
     align-content: center;
-    gap:60px;
-    font-size: 18px;
-    padding: 0px 90px 0px 0px;
+    gap:10px;
+    font-size: 17px;
+    padding: 0px 70px 0px 0px;
 }
 
 .lista {
     display: flex;
     align-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 }
 
-.list-ini:hover {
-    text-decoration: underline;
+.quienes:hover{
+    color: var(--navbar);
+    font-weight: 700;
+    
+}
+.servicios:hover{
+    color: var(--navbar);
+    font-weight: 700;
+}
+.equi:hover {
+    color: var(--navbar);
+    font-weight: 700;
+    
+}
+.conta:hover{
+    color: var(--navbar);
+    font-weight: 700;
+    
+    
 }
 
-.list-can:hover {
-    text-decoration:underline
-}
+.button {
 
-.list-emp:hover {
-    text-decoration: underline;
-}
-
-.list-tra:hover{
-    text-decoration: underline;
-}
-
-nav button {
-    background-color: rgb(56, 53, 53);
-    color: white;
-    border-radius: 5px;
-    padding: 5px 15px;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
     display: flex;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+    gap: 10px;
+    padding: 0px 20px;
+}
+.cand, .emp, .empl{
+    display: flex;
+    padding: 4px 14px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+}
+.cand {
+    
+    color: var(--navbar);
+    font-weight: 600;
+
+}
+.emp {
+    color: var(--naranja);
+    font-weight: 600;
 }
 
-nav button::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    top: 0;
-    left: -100% ;
-    transition: all .3s;
-}
-
-nav button:hover::before{
-    left: 0;
-    z-index: -1;
-}
-
-nav button:hover {
-    transform: scale(1.1);
+.empl {
+    background-color: var(--navbar);
+    border: solid 1px var(--blanco);
+    color: var(--blanco);
+    font-weight: 600;
 }
 
 main {
-    background-color:white
+    background-color: var(--navbar);
+}
+
+/*menu hamburguesa*/
+#menu-toogle, .menu-label{
+    display: none;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<primera seccion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .section1 {
-    margin: auto;
+    background-image: url(./img/banner.gif);
+    height: 650px;
+    margin: 0px 50px 50px 50px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.msj {
+    max-width: 1000px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background: rgba(8, 32, 65, 0.726);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.baner {
-    display: flex;
-    padding-top: 51px;
+.dis {
+    font-size: 30px;
+
 }
 
-.div2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 60px;
+.wel {
+    font-size: 3rem;
+}
+.irl {
+    color: var(--dei);
+    font-size: 22px;
+    width: 500px;
 }
 
-.titulo2 {
-    display: flex;
-    justify-content: center;
-    color: rgb(99, 99, 99);
-}
-
-.butt {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.servicios, .colaborar, .busca{
-    font-size: 18px;
-    border-radius: 5px;
-    padding: 8px 10px;
-    background-color:rgb(239, 46, 36); 
-    color: rgb(255, 255, 255);
-    border: none;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.servicios::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: #cc0707;
-    position: absolute;
-    z-index: -1;
-    top: -37px;
-    left: 0;
-    transition: all .3s ease-in-out;
-}
-
-.servicios:hover::after{
-    top: 0px;
-}
-
-.servicios:hover {
-    transform: scale(1.1);
-}
-/*boton colaborar*/
-
-.colaborar::after {
-    content: '';
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    left: calc(-100% - 37px);
-    /* border-top: 30px solid green;*/
-    border-bottom: 37px solid #cc0707;
-    /*border-left: 30px solid violet;*/
-    border-right: 37px solid transparent;
-    transition: all .3s ease-in-out;
-}
-
-.colaborar:hover::after {
-    left: 0;
-}
-
-.colaborar:hover{
-    transform: scale(1.1);
-}
-/*busca<<<<<<<<<<<<<<<<<<<<<<<<<<busca>>>>>>>>>>>>>>>>>>*/
-
-.busca::after {
-    content: '';
-    width: 100%;
-    height: 300%;
-    position: absolute;
-    background-color: #cc0707;
-    z-index: -1;
-    top: -300%;
-    transition: all .4s ease-in-out;
-    border-radius: 0px 0px 300px 300px;
-}
-
-.busca:hover::after{
-    top: 0;
-}
-
-.busca:hover {
-    transform: scale(1.1);
-}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<segunda seccion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .section2 {
-    background-color: rgb(248, 220, 220);
+    background-color:var(--azul);
     padding-bottom: 65px;
 }
 
 .section2 h1 {
     font-size: 45px;
-    color: rgb(245, 72, 72); 
+    color: var(--blanco);
 }
 
 .proposito {
@@ -235,7 +198,7 @@ main {
     align-items: center;
     gap: 12px;
     font-size: 33px;
-    color: rgb(99, 99, 99);
+    color: var(--naranja);
     padding: 55px 0px 20px 0px;
 }
 
@@ -260,7 +223,7 @@ main {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 1px;
     height: 150px;
     width: 700px;
     padding: 40px 30px ;
@@ -270,12 +233,12 @@ main {
 }
 
 .cultura  {
-    background-color: rgb(245, 72, 72);
+    background-color: var(--naranja);
     color: white;
 }
 
 .trans {
-    background-color: rgb(99, 99, 99);
+    background-color: var(--navbar);
     color: white;
 }
 
@@ -289,7 +252,7 @@ main {
 
 .sumamos {
     
-    color: rgb(99, 99, 99);
+    color: var(--naranja);
     font-size: 24px;
     padding: 0px 30px;
     max-width: 800px;
@@ -310,20 +273,20 @@ main {
     font-size: 20px;
     height: 250px;
     width: 300px;
-    color: rgb(117, 66, 66);
+    color: var(--blanco);
 }
 
 .conectar h2 {
-    color: rgb(245, 72, 72);
+    color: var(--naranja);
 }
 
 .pertenecer h2 {
-    color: rgb(56, 54, 54);
+    color: var(--navbar);
 }
 
 .pertenecer {
-    border-left: 3px solid rgb(245, 72, 72);
-    border-right:3px solid  rgb(245, 72, 72);
+    border-left: 3px solid var(--dei);
+    border-right:3px solid  var(--dei);
 }
 
 .co-crear h2 {
@@ -332,11 +295,12 @@ main {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<tercera seccion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .section3 {
+    background-color: var(--celeste);
     display: flex;
     flex-direction: column;
     padding-top: 55px;
     padding-bottom: 65px ;
-    color: rgb(245, 72, 72);
+    color: var(--blanco);
     gap: 30px;
     align-items: center;
     }
@@ -356,7 +320,7 @@ main {
 }
 
 .fabrica, .tractor, .menu, .marketing, .tecno, .coche, .mina {
-    background-color: #C91732;
+    background-color: var(--navbar);
     border-radius: 25px;
     height: 100px;
     padding: 30px;
@@ -364,7 +328,7 @@ main {
 }
 
 .arti2 img:hover{
-    background-color: #a59696;
+    background-color: var(--naranja);
     cursor: pointer;
 }
 
@@ -378,7 +342,7 @@ main {
 }
 
 .prin {
-    color: rgb(99, 99, 99);
+    color: var(--navbar);
     display: flex;
     max-width: 700px;
     margin: auto;
@@ -389,7 +353,7 @@ main {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<section4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .section4 {
-    background-color: rgb(248, 220, 220);
+    background-color: var(--blog);
     padding-top: 55px;
     padding-bottom: 65px;
     display: flex;
@@ -400,7 +364,7 @@ main {
 
 .section4 h2 {
     text-align: center;
-    color: rgb(245, 72, 72);
+    color: var(--blanco);
     font-size: 50px;
 }
 
@@ -413,25 +377,25 @@ main {
 }
 
 .tex-blog-parr {
-    color: #3b3939;
+    color: var(--celeste);
     font-size: 14px;
 }
 
 .tex-link {
-    color: #cc0707;
+    color: var(--naranja);
     font-size: 20px;
 }
 
 .tex-link-1 {
-    background-color: #e4bbbb;
+    background-color: #5f4a4a;
     padding: 2px 6px;
     border-radius: 5px;
-    color: #C91732;
+    color: var(--naranja);
     font-size: 14px;
 }
 
 .tex-link-1:hover{
-    background-color: #eeaab3;
+    background-color:var(--blanco);
 }
 
 .blog1 {
@@ -450,7 +414,7 @@ main {
 
 .blog1 img { 
     height: 350px;
-    border-radius: 7px;
+    border-radius: 1px;
 }
 
 .ver-mas {
@@ -488,6 +452,7 @@ main {
 /*<<<<<<<<<<<<<<<<<<seccion5>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .section5 {
+    background-color: var(--contact);
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -506,11 +471,11 @@ main {
 
 .contac h1{
     font-size: 40px;
-    color: rgb(99, 99, 99);
+    color: var(--navbar);
 }
 
 .contac p {
-    color: rgb(99, 99, 99);
+    color: var(--dei);
     font-size: 18px;
 }
 
@@ -541,14 +506,14 @@ main {
 form input {
     width: 320px;
     height: 40px;
-    border-radius: 6px;
-    border: none; 
-    background-color: #f72222;
+    border-radius: 1px;
+    border: solid 1px var(--celeste); 
+    background-color: var(--blanco);
     color: rgb(247, 243, 243);
 }
 
 input::placeholder {
-    color: white;
+    color: var(--celeste);
     padding: 0px 10px;
 }
 
@@ -568,26 +533,25 @@ input::placeholder {
 form textarea{
     width: 1040px;
     height: 150px;
-    background-color: #f72222;
-    border-radius: 6px;
-    border: none;
-    color: white;
+    background-color: var(--blanco);
+    border-radius: 1px;
+    border: solid 1px var(--celeste);
+    color: var(--azul);
 }
 
 textarea::placeholder {
-    color: white;
+    color: var(--celeste);
     padding: 10px;
 }
 
 .section5 button{
     cursor: pointer;
     padding: 13px 33px;
-    border-radius: 5px;
-    border: none;
+    border-radius: 20px;
+    border: solid 2px var(--navbar);
     font-size: 17px;
     font-weight: 600;
-    background-color: rgb(56, 53, 53);
-    color: white;
+    color: var(--blog);
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -598,7 +562,7 @@ textarea::placeholder {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: var(--naranja);
     top: 0;
     left: -100%;
     transition: all .3s;
@@ -607,10 +571,13 @@ textarea::placeholder {
 .section5 button:hover::before {
     left: 0;
     z-index: -1;
+    
 }
 
 .section5 button:hover {
     transform: scale(1.1);
+    color: var(--blog);
+    
 }
 
 .but {
@@ -625,7 +592,7 @@ textarea::placeholder {
 }
 
 footer {
-    background-color: #394448;
+    background-color: var(--navbar);
     padding: 40px 0px;
 }
 
@@ -652,7 +619,6 @@ footer {
     color: white;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid red;
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -672,9 +638,9 @@ footer {
 .social-link a {
     line-height: 0px;
     margin-left: 8px;
-    background-color: rgba(65, 69, 75, 0.849);
+    background-color: rgba(15, 43, 85, 0.849);
     display: inline-block;
-    border-radius: 40%;
+    border-radius: 2px;
     padding: 3px;
 }
 
@@ -686,14 +652,14 @@ footer {
     display: inline-block;
     background-color: rgb(248, 242, 242);
     text-align: center;
-    border-radius: 40%;
+    border-radius: 2px;
 }
 
 .autor {
     padding-left: 40px;
     display: flex;
     gap: 30px;
-    color: white
+    color: var(--naranja)
 }
 
 footer span {
