@@ -64,6 +64,8 @@ nav {
     gap:10px;
     font-size: 17px;
     padding: 0px 70px 0px 0px;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 .lista {
@@ -95,7 +97,6 @@ nav {
 }
 
 .button {
-
     display: flex;
     align-items: center;
     gap: 10px;
