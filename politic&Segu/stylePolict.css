@@ -1,0 +1,129 @@
+:root{
+    --navbar: #08324C;
+    --dei: #00D2FF;
+    --naranja: #FF996D;
+    --blanco: #fff;
+    --celeste: #95A7B2;
+    --azul: #284D63;
+    --contact: #F2F4F6;
+    --blog: #002A3C;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 45px;
+    background: rgba(8, 41, 85, 0.336);
+    backdrop-filter: blur( 4px );
+    position:fixed;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.logo {
+    
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--blanco);
+}
+header strong{
+    color: var(--dei);
+}
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.list {
+    
+    color: var(--blanco);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 13px;
+}
+.who:hover{
+    text-decoration: underline;
+    font-weight: 700;
+
+}
+.serv:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.equip:hover{
+    text-decoration: underline;
+    font-weight: 700;
+
+}
+
+.cont:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.butt{
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cand, .comp, .emp{
+    display: flex;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 800;
+}
+.cand {
+    color: var(--navbar);
+
+}
+.comp {
+    color: var(--naranja);
+}
+.emp{
+    background-color: var(--navbar);
+    border: solid 1px var(--blanco);
+    color: var(--blanco);
+    
+}
+main{
+}
+
+#hero{
+    background-image: url(../img/transicion-laboral.png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+.polit {
+    font-size: 45px;
+    color: var(--blanco);
+}
+
+#text {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 100px ;
+}

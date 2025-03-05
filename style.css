@@ -9,6 +9,9 @@
     --blog: #002A3C;
     
 }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0px;
@@ -39,18 +42,12 @@ header {
     -webkit-backdrop-filter: blur( 4px );
     position:fixed;
     width: 100%;
-    overflow: hidden;
+    box-sizing: border-box;
 }
-/*
-header img {
-    width: 60px;
-    height: 40px;
-}*/
 
 .logo-aux {
     font-size: 25px;
     font-weight: 600;
-    
 }
 
 header strong {
@@ -61,11 +58,9 @@ header strong {
 nav {
     display: flex;
     align-content: center;
-    gap:10px;
-    font-size: 17px;
-    padding: 0px 70px 0px 0px;
-    text-transform: uppercase;
+    gap:20px;
     font-size: 13px;
+    text-transform: uppercase;
 }
 
 .lista {
@@ -100,31 +95,27 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0px 20px;
 }
 .cand, .emp, .empl{
     display: flex;
-    padding: 4px 14px;
-    font-size: 15px;
+    padding: 5px 15px;
+    font-size: 12px;
     border-radius: 15px;
     border: none;
+    font-weight: 800;
 }
 .cand {
-    
     color: var(--navbar);
-    font-weight: 600;
-
 }
+
 .emp {
     color: var(--naranja);
-    font-weight: 600;
 }
 
 .empl {
     background-color: var(--navbar);
     border: solid 1px var(--blanco);
     color: var(--blanco);
-    font-weight: 600;
 }
 
 main {
@@ -451,9 +442,9 @@ main {
     transform: scale(1.1);
     color: var(--blanco);
 }
-/*<<<<<<<<<<<<<<<<<<seccion5>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<seccion5 contacto>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-.section5 {
+.contacto {
     background-color: var(--contact);
     display: flex;
     flex-direction: column;
@@ -546,7 +537,7 @@ textarea::placeholder {
     padding: 10px;
 }
 
-.section5 button{
+.contacto button{
     cursor: pointer;
     padding: 13px 39px;
     border-radius: 35px;
@@ -559,7 +550,7 @@ textarea::placeholder {
     z-index: 1;
 }
 
-.section5 button::before {
+.contacto button::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -570,13 +561,13 @@ textarea::placeholder {
     transition: all .3s;
 }
 
-.section5 button:hover::before {
+.contacto button:hover::before {
     left: 0;
     z-index: -1;
     
 }
 
-.section5 button:hover {
+.conatcto button:hover {
     transform: scale(1.1);
     color: var(--blanco);
     border: none;

@@ -29,11 +29,11 @@
     animation-delay: 0.2s;
     
 }
-.servicios, .colaborar, .busca {
+.cambi, .colaborar, .busca {
     opacity: 0;
     animation: fade 0.8s forwards, slide-up 0.9s;
 }
-.servicios:nth-child(1) {
+.cambio:nth-child(1) {
     animation-delay: 0.9s;
 }
 .colaborar:nth-child(2) {
