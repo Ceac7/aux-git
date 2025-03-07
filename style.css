@@ -175,12 +175,15 @@ main {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<segunda seccion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .section2 {
-    background-color:var(--azul);
+    background-image: url(./img/edificios.jpeg);
     padding-bottom: 65px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .section2 h1 {
-    font-size: 45px;
+    font-size: 3rem;
     color: var(--blanco);
 }
 
@@ -191,7 +194,8 @@ main {
     gap: 12px;
     font-size: 33px;
     color: var(--naranja);
-    padding: 55px 0px 20px 0px;
+    padding: 65px 0px 20px 0px;
+    font-weight: 600;
 }
 
 .arti1 {
@@ -242,55 +246,22 @@ main {
     gap: 20px;
 }
 
-.sumamos {
-    
-    color: var(--naranja);
-    font-size: 24px;
-    padding: 0px 30px;
-    max-width: 800px;
-    text-align: center;
-}
-
-.tres-parra {
-    display: flex;
-    padding: 40px 20px 0px 20px;
-    justify-content: center;
-}
-
-.conectar, .pertenecer, .co-crear {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 30px 20px;
-    font-size: 20px;
-    height: 250px;
-    width: 300px;
+.nota-aux {
     color: var(--blanco);
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    max-width: 600px;
+    font-weight: 100;
 }
 
-.conectar h2 {
-    color: var(--naranja);
-}
-
-.pertenecer h2 {
-    color: var(--navbar);
-}
-
-.pertenecer {
-    border-left: 3px solid var(--dei);
-    border-right:3px solid  var(--dei);
-}
-
-.co-crear h2 {
-    color: white;
-}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<tercera seccion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .section3 {
     background-color: var(--celeste);
     display: flex;
     flex-direction: column;
-    padding-top: 55px;
+    padding-top: 65px;
     padding-bottom: 65px ;
     color: var(--blanco);
     gap: 30px;
