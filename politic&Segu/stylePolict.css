@@ -134,3 +134,40 @@ main{
     color: var(--azul);
     font-size: 18px;
 }
+
+footer {
+    background-color: var(--navbar);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+
+}
+.img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.img-aux {
+    width: 200px;
+}
+
+.compañia {
+    background-color: var(--celeste);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact {
+    background-color: #00D2FF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.siguenos {
+    background-color: #FF996D;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
